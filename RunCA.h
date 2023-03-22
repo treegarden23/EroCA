@@ -2,8 +2,9 @@
 //                                                   //
 //  RunCA.h                                          //
 //  Runoff_Model_Based_On_Cellular_Automata (RunCA)  //
+//  Erosion_Model_Based_On_Cellular_Automata (EroCA)  //
 //                                                   //
-//  Created by Qi Shao on 26/2/2020.                 //
+//  Created by Shahla yavari and Qi Shao on 26/2/2021. //
 //  Copyright © 2020 Qi Shao. All rights reserved.   //
 //                                                   //
 ///////////////////////////////////////////////////////
@@ -99,17 +100,17 @@ class RunCA {
     //[8] N (manning's coefficent)
     vector< vector<double> > iparams_; 
 
-  	//vector<double>  BM_i , SusVol_i ; //Qi: these should be member variables of Cell?
-	  //double BMtot = 0., SusVol = 0.; //Qi: these should be member variable of Cell?
+  	//vector<double>  BM_i , SusVol_i ; //: these should be member variables of Cell?
+	  //double BMtot = 0., SusVol = 0.; //: these should be member variable of Cell?
     
     //erosion parameters vector
-    //Qi: why do we need the input percentages of size fractions?? 
+    //: why do we need the input percentages of size fractions?? 
 	  //[0] soil type
 	  //[1] clay
 	  //[2] silt  
 	  //[3] sand
 	  //[4] gravel
-    //Qi: fall velocities should not be included here
+    //: fall velocities should not be included here
     /* 
 	  //[5] wc  (fall velocity clay)
 	  //[6] ws  (fall velocity silt)
