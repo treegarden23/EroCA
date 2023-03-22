@@ -3,7 +3,12 @@
 //  Cell.cpp                                         //
 //  Runoff_Model_Based_On_Cellular_Automata (RunCA)  //
 //                                                   //
-//  Created by Qi Shao on 26/2/2020.                 //
+//  
+//EroCA_Model_Based_On_Cellular_Automata             //
+//                                                   //
+//  Created by Shahla yavari and  Qi Shao on 26/2/2021.
+//                                                   //
+//  Created by Qi Shao on 26/2/2021. 
 //  Copyright © 2020 Qi Shao. All rights reserved.   //
 //                                                   //
 ///////////////////////////////////////////////////////
