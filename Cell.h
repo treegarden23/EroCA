@@ -1,9 +1,14 @@
 ///////////////////////////////////////////////////////
 //                                                   //
-//  Cell.h                                           //
+//  Cell.cpp                                         //
 //  Runoff_Model_Based_On_Cellular_Automata (RunCA)  //
 //                                                   //
-//  Created by Qi Shao on 26/2/2020.                 //
+//  
+//EroCA_Model_Based_On_Cellular_Automata             //
+//                                                   //
+//  Created by Shahla yavari and  Qi Shao on 26/2/2021.
+//                                                   //
+//  Created by Qi Shao on 26/2/2021. 
 //  Copyright © 2020 Qi Shao. All rights reserved.   //
 //                                                   //
 ///////////////////////////////////////////////////////
@@ -208,9 +213,9 @@ class Cell {
 									 
 	//****************************************************************************************
 	
-	vector<double> SusVol_i_; //volume (m3) of suspended sediment in differnt size fractions - Qi
-	vector<double> BmVol_i_; //volume (m3) of bed material in differnt size fractions - Qi
-	vector<double> EroVol_i_; //volume (m3) of eroded material in differnt size fractions - Qi
+	vector<double> SusVol_i_; //volume (m3) of suspended sediment in differnt size fractions - 
+	vector<double> BmVol_i_; //volume (m3) of bed material in differnt size fractions - 
+	vector<double> EroVol_i_; //volume (m3) of eroded material in differnt size fractions - 
 	double land_elevation_change_;
 	double cumulative_land_elevation_change_;
 	double Sero_i_;
@@ -253,8 +258,8 @@ class Cell {
 
 		// Bed load parameter in private
 	
-	vector<double> BmVol_i_b; //volume (m3) of bed material in differnt size fractions - Qi
-	vector<double> EroVol_i_b; //volume (m3) of eroded material in differnt size fractions - Qi
+	vector<double> BmVol_i_b; //volume (m3) of bed material in differnt size fractions - 
+	vector<double> EroVol_i_b; //volume (m3) of eroded material in differnt size fractions - 
 	double land_elevation_change_b;
 	double cumulative_land_elevation_change_b;
 	double Sero_i_b;
