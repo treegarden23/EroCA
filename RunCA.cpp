@@ -9,8 +9,7 @@
 //                                                   //
 //  Created by Shahla yavari and  Qi Shao on 26/2/2021.
 //                                                   //
-//  Created by Qi Shao on 26/2/2021. 
-//  Copyright © 2020 Qi Shao. All rights reserved.   //
+//     
 //                                                   //
 ///////////////////////////////////////////////////////
 
@@ -1224,7 +1223,7 @@ void RunCA::UpdateErosionStates(Cell* cell) {
 
 	//compute settling and adjust suspended sediment and deposited/bed material
 	double water_depth = cell->GetWaterDepth();
-    water_depth /= 1000.; //Qi added: convert to m
+    water_depth /= 1000.; // added: convert to m
    
     vector<double> ws(4, 0.); //fall velocities 
     //Table 2-1, Page24
@@ -2435,7 +2434,7 @@ void RunCA::AccumulateSedimentTransport(Cell* cell) {
 	cell->Setaccum_ero_sedi(com_accum_ero_sedi);
     */
 
-    //Qi added
+    // added
     cell->Setaccum_totsed(com_accum_totsed);//updated sediment transport(m)
     cell->SetSusSediInflow(sus_sedi_inflow);
     cell->SetSusSediOutflow(sus_sedi_outflow);
@@ -2646,7 +2645,7 @@ double RunCA::ComputeBedloadTransport(Cell* cell) {
                                      Sbm_i_flowb[i][n] = VOL * SN / sum_s; 
                                    // Sbm_i_flowb[i][n] = VOL[i] * cell-> GetSlope()[n] / sum_s; 
 
-                                    //Sbm_i_flowb[i][n] = VOL[i] * neighbours[n]-> GetSlope() / sum_s; Qi
+                                    //Sbm_i_flowb[i][n] = VOL[i] * neighbours[n]-> GetSlope() / sum_s; 
                                     Sbm_nb[n] += Sbm_i_flowb[i][n];
                                     Stotb[n] += Sbm_i_flowb[i][n];
                                         Sbmb += Sbm_i_flowb[i][n];   
@@ -2683,7 +2682,7 @@ double RunCA::ComputeBedloadTransport(Cell* cell) {
                         //
                                     Sero_i_flowb[i][n] = SKR_left[i] * SN / sum_s;
                                     //Sero_i_flowb[i][n] = SKR_left[i] * cell->GetSlope()[n] / sum_s;
-                                   //Sero_i_flowb[i][n] = SKR_left[i] * neighbours[n]->GetSlope() / sum_s;  Qi
+                                   //Sero_i_flowb[i][n] = SKR_left[i] * neighbours[n]->GetSlope() / sum_s;  
                                     Sero_nb[n] += Sero_i_flowb[i][n];
                                     Stotb[n] += Sero_i_flowb[i][n];
                                     Serob += Sero_i_flowb[i][n];   
