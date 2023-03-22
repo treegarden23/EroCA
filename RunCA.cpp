@@ -1,17 +1,15 @@
-
-///////////////////////////////////////////////////////
-//                                                   //
-//  Cell.cpp                                         //
-//  Runoff_Model_Based_On_Cellular_Automata (RunCA)  //
-//                                                   //
-//  
-//EroCA_Model_Based_On_Cellular_Automata             //
-//                                                   //
-//  Created by Shahla yavari and  Qi Shao on 26/2/2021.
-//                                                   //
-//     
-//                                                   //
-///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+//                                                       
+//  RunCA.h                                             
+//  Runoff_Model_Based_On_Cellular_Automata (RunCA)     
+//  Erosion_Model_Based_On_Cellular_Automata (EroCA)    
+//                                                      
+//  Created by Shahla yavari and Qi Shao on 26/2/2021.  
+//   All rights reserved.                               
+//  Copyright © 2020 Qi Shao.
+//  Copyright © 2021 Shahla yavari.
+//                                                   
+//////////////////////////////////////////////////////////
 
 
 #include "RunCA.h"
